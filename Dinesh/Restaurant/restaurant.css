@@ -1,0 +1,41 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-gap: 20px; /* Gap between grid items */
+}
+
+.restaurant-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.restaurant-img {
+  width: 100%;
+  height: auto;
+}
+
+.restaurant-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.restaurant-location {
+  margin-top: 5px;
+}
+
+.restaurant-rating {
+  margin-top: 5px;
+}
+
+.restaurant-address {
+  margin-top: 5px;
+}
+
+.restaurant-cost {
+  margin-top: 5px;
+}
+
+.restaurant-distance {
+  margin-top: 5px;
+}
