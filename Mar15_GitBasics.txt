@@ -5,8 +5,4 @@
 	git commit -m "Commit message"
 	git pull
 	git push
-
-	git checkout branch branchname
-	git reset --hard
-
 	
