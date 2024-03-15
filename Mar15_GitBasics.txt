@@ -1,0 +1,12 @@
+1.Register in https://github.com/ with your google account
+2.Git Commands
+	git clone url
+	git add *
+	git commit -m "Commit message"
+	git pull
+	git push
+
+	git checkout branch branchname
+	git reset --hard
+
+	
