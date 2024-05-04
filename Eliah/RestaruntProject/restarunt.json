@@ -1,0 +1,66 @@
+//name,address,pincode,restarunt type:south india,logo,service type:dinein,delivery
+
+{
+    "Restarunts":[
+
+        {
+            "name" : "Mefil",
+            "address":"jntu",
+            "pincode":"522101",
+            "restarunt type":"southIndia",
+            "logo":"@M@",
+            "service":"Dinein",
+            "delivery":"yes"
+
+        },
+        {
+            "name" : "pistha house",
+            "address":"miyapur",
+            "pincode":"522108",
+            "restarunt type":"southIndia,northIndia",
+            "logo":"@PH@",
+            "service":"Dinein,Take away",
+            "delivery":"yes"
+        },
+        {
+            "name" : "Shaghouse",
+            "address":"Kondapur",
+            "pincode":"522102",
+            "restarunt type":"southIndia,northIndia",
+            "logo":"@S@",
+            "service":"Dinein,Take away",
+            "delivery":"yes"
+        },
+
+        {
+            "name" : "Mefil",
+            "address":"jntu",
+            "pincode":"522101",
+            "restarunt type":"southIndia",
+            "logo":"&ndbp",
+            "service":"Dinein",
+            "delivery":"yes"
+        },
+        {
+            "name" : "Pistha House",
+            "address":"jntu",
+            "pincode":"522101",
+            "restarunt type":"NorthIndia,southIndia",
+            "logo":"&ndbp",
+            "service":"Dinein",
+            "delivery":"yes"
+        },
+        {
+            "name" : "Sathi bhiriyani House",
+            "address":"jntu",
+            "pincode":"522101",
+            "restarunt type":"NorthIndia,southIndia",
+            "logo":"&ndbp",
+            "service":"Dinein",
+            "delivery":"yes"
+        }
+
+
+
+    ]
+}

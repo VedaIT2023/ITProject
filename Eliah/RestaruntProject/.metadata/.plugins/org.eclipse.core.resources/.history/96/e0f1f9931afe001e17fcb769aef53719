@@ -1,0 +1,42 @@
+package com.vedait.json.conversion;
+
+import java.io.FileReader;
+import java.util.Iterator;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+public class JsonConversion {
+
+	public static void main(String[] args) {
+
+		JSONParser parser = new JSONParser();
+		try {
+			Object obj = parser.parse(new FileReader("C:\\Users\\G6\\Desktop\\RestaruntProject\\restarunt.json"));
+			JSONArray jsonObject = (JSONArray) obj;
+
+			Iterator objects = jsonObject.iterator();
+			while (objects.hasNext()) {
+				JSONObject objs = (JSONObject) objects.next();
+
+				String name = (String) objs.get("name");
+				System.out.println(name);
+				String course = (String) objs.get("address");
+				System.out.println(course);
+
+				JSONArray subjects = (JSONArray) objs.get("Subjects");
+				System.out.println("Name: " + name);
+				System.out.println("Course: " + course);
+				System.out.println("Subjects:");
+				Iterator iterator = subjects.iterator();
+				while (iterator.hasNext()) {
+					System.out.println(iterator.next());
+				}
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

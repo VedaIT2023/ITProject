@@ -1,0 +1,78 @@
+package com.vedait.json.conversion;
+
+import java.io.FileReader;
+import java.util.Iterator;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class JsonConversion {
+
+	public static void main(String[] args) {
+
+		JSONParser parser = new JSONParser();
+		try {
+			Object obj = parser.parse(new FileReader("C:\\Users\\G6\\Desktop\\RestaruntProject\\restarunt.json"));
+			JSONObject jsonObject = (JSONObject) obj;
+
+			JSONArray restaurants = (JSONArray) jsonObject.get("Restarunt");
+			System.out.println(restaurants.size());
+
+			Iterator iterator = restaurants.iterator();
+//			while (iterator.hasNext()) {
+//				JSONObject rst = (JSONObject) iterator.next();
+//
+//				String name = (String) rst.get("name");
+//				String address = (String) rst.get("address");
+//				String pincode = (String) rst.get("pincode");
+//				String restaruntType = (String) rst.get("RestaruntType");
+//				String minCost = (String) rst.get("minCost");
+//				String logo = (String) rst.get("logo");
+//				String serviceType = (String) rst.get("serviceType");
+//
+//				System.out.println("Name: " + name);
+//				System.out.println("Address: " + address);
+//				System.out.println("Pin Code: " + pincode);
+//				System.out.println("Restarunt Type: " + restaruntType);
+//				System.out.println("Min Cost: " + minCost);
+//				// System.out.println("logo: " + logo);
+//				System.out.println("Service Type: " + serviceType);
+//				
+//				System.out.println("================================");
+//			}
+
+			for (Object object : restaurants) {
+				JSONObject rst = (JSONObject) object;
+
+				String name = (String) rst.get("name");
+				String address = (String) rst.get("address");
+				String pincode = (String) rst.get("pincode");
+				String restaruntType = (String) rst.get("RestaruntType");
+				String minCost = (String) rst.get("minCost");
+				String logo = (String) rst.get("logo");
+				String serviceType = (String) rst.get("serviceType");
+
+				System.out.println("Name: " + name);
+				System.out.println("Address: " + address);
+				System.out.println("Pin Code: " + pincode);
+				System.out.println("Restarunt Type: " + restaruntType);
+				System.out.println("Min Cost: " + minCost);
+				//System.out.println("logo: " + logo);
+				System.out.println("Service Type: " + serviceType);
+
+				System.out.println("================================");
+
+//				ObjectMapper objectMapper = new ObjectMapper();
+//				Restarunts restaurant = objectMapper.readValue(rst.toJSONString(), Restarunts.class);
+//				System.out.println("Restaurant name: " + restaurant.getRestarunt());
+//				System.out.println(rst.toJSONString());
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,24 @@
+package com.vedait.json.conversion;
+
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Restarunts {
+
+	private List<Restarunt> Restarunt;
+
+	public Restarunts() {
+
+	}
+
+	public List<Restarunt> getRestarunt() {
+		return Restarunt;
+	}
+
+	public void setRestarunt(List<Restarunt> restarunt) {
+		Restarunt = restarunt;
+	}
+
+}

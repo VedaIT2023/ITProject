@@ -1,0 +1,13 @@
+package com.vedait.json.conversion;
+
+public class Restaurant {
+
+	private String name;
+	private String address;
+	private String pincode;
+	private String RestaruntType;
+	private String minCost;
+	private String logo;
+	private String serviceType;
+
+}
