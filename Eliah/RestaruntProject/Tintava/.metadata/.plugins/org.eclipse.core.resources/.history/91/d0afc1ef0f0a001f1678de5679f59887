@@ -1,0 +1,5 @@
+package com.vedait.json.conversion;
+
+public class Car {
+
+}

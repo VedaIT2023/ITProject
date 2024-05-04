@@ -12,10 +12,24 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class JsonConversion {
 
 	public static void main(String[] args) {
+		
+		Car eliahCar = new Car("Hyndai","red",13000,230,"v1");
+		
+		Car saika = new Car("Hyndai","red",14000,430,"v3");
+		
+		eliahCar.engineStart();
+				
+		System.out.println(eliahCar.name);
+		
+		
+		
+		
 
 		JSONParser parser = new JSONParser();
 		try {
-			Object obj = parser.parse(new FileReader("C:\\Users\\G6\\Desktop\\RestaruntProject\\restarunt.json"));
+	        String projectDirectory = System.getProperty("user.dir");
+
+			Object obj = parser.parse(new FileReader(projectDirectory + "/restarunt.json"));
 			JSONObject jsonObject = (JSONObject) obj;
 
 			JSONArray restaurants = (JSONArray) jsonObject.get("Restarunt");
